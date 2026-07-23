@@ -358,7 +358,7 @@ a:focus-visible,
   border-radius: 28px 28px 52px 28px;
   background: var(--accent-soft);
   box-shadow: 10px 12px 0 var(--accent-soft), 10px 12px 0 2px var(--ink);
-  transform: rotate(-1.5deg);
+  transform: none;
 }
 
 .clue-frame img {

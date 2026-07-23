@@ -38,7 +38,7 @@ const checks = [
   ["dark theme is persistent and intentional", app.includes("Use ${theme === \"dark\" ? \"light\" : \"dark\"} theme") && styles.includes(':root[data-theme="dark"]')],
   ["youth department appears before the phone number", /海归湾国际教育青少部<\/span>[\s\S]*?href="tel:4000616820"/.test(app)],
   ["mobile keeps the card within the viewport", /@media \(max-width: 760px\)[\s\S]*?grid-template-rows:\s*45px minmax\(0, 1fr\) 19px/.test(styles) && styles.includes("min-width: 320px")],
-  ["mobile clue pictures stay level", /@media \(max-width: 760px\)[\s\S]*?\.clue-frame\s*\{[\s\S]*?transform:\s*none;/.test(styles)],
+  ["clue pictures stay level at every viewport", /\.clue-frame\s*\{[\s\S]*?transform:\s*none;/.test(styles) && !/\.clue-frame\s*\{[^}]*transform:\s*rotate\(/.test(styles)],
   ["short desktop keeps the celebration action visible", styles.includes("@media (max-height: 720px) and (min-width: 761px)") && styles.includes(".celebration-card { min-height: 0; padding: 18px; gap: 8px")],
   ["old service workers retire instead of refreshing", main.includes("getRegistrations") && main.includes("registration.unregister") && !main.includes(".register(") && worker.includes("self.registration.unregister") && !worker.includes("clients.claim")],
   ["preview hot reload is disabled", vite.includes("hmr: false")],
