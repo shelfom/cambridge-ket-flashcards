@@ -468,8 +468,10 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <span className="footer-brand">海归湾国际教育</span>
-        <a className="footer-phone" href="tel:4000616820" aria-label="Call 海归湾国际教育 at 400-061-6820">400-061-6820</a>
+        <span className="footer-contact">
+          <span className="footer-brand">海归湾国际教育青少部</span>
+          <a className="footer-phone" href="tel:4000616820" aria-label="Call 海归湾国际教育青少部 at 400-061-6820">400-061-6820</a>
+        </span>
         <button onClick={() => setSourcesOpen(true)} disabled={celebrating}>Unofficial Cambridge list practice</button>
       </footer>
 
