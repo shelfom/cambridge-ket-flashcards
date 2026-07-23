@@ -7,4 +7,4 @@ cd "$PROJECT_DIR"
 
 PORT="${DEPLOY_RUN_PORT:-5000}"
 
-exec pnpm dlx serve dist -l "$PORT"
+exec pnpm dlx serve dist -p "$PORT" -s
