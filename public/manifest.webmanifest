@@ -1,0 +1,18 @@
+{
+  "name": "Cambridge KET Flashcards",
+  "short_name": "KET Flashcards",
+  "description": "Complete picture-first KET vocabulary practice with British pronunciation and classified appendixes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7df",
+  "theme_color": "#fff7df",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

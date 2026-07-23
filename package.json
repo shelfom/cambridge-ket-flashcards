@@ -1,0 +1,31 @@
+{
+  "name": "cambridge-ket-flashcards",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build && vite preview",
+    "build": "vite build",
+    "preview": "vite preview",
+    "audio:generate": "node scripts/generate-audio.mjs",
+    "images:compose": "node scripts/compose-dark-storybook-clues.mjs",
+    "images:generate": "node scripts/generate-storybook-clues.mjs",
+    "data:extract": "python3 scripts/extract-ket-2025.py",
+    "data:build": "python3 scripts/build-dictionary-course.py",
+    "data:verify": "node scripts/verify-data.mjs",
+    "test": "node scripts/verify-data.mjs && node scripts/verify-ui.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "cheerio": "^1.1.0",
+    "openmoji": "^17.0.0",
+    "sharp": "^0.34.3",
+    "vite": "^7.0.5",
+    "wink-lemmatizer": "^3.0.4"
+  }
+}
