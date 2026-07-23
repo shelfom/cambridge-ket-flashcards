@@ -423,7 +423,7 @@ export default function App() {
                         onClick={playPronunciation}
                         aria-label={`Play British pronunciation of ${card.headword}`}
                       >
-                        <span>UK</span><SpeakerIcon />
+                        <SpeakerIcon />
                       </button>
                     </span>
                     <span className="flip-hint">tap the card to reveal</span>
